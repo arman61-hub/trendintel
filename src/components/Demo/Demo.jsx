@@ -3,7 +3,7 @@ import React from "react";
 export default function Demo() {
   return (
     <div className="w-full bg-white min-h-screen flex items-center justify-center p-6 sm:p-0">
-      <div className="w-full max-w-[1600px] mx-auto p-6 sm:p-10">
+      <div className="w-full max-w-[1600px] mx-auto" style={{padding:"2vw"}}>
         <div className="relative bg-white bg-opacity-90 shadow-xl rounded-xl p-8 sm:p-12">
           {/* Background Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-violet-500 via-transparent to-violet-500 opacity-10 rounded-xl"></div>
