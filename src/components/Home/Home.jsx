@@ -3,69 +3,50 @@ import { Link } from 'react-router-dom';
 import model from './model.png';
 import img1 from './img1.jpg';
 import img2 from './img2.jpg';
+import './home.css'
 
 export default function Home() {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative h-[90vh] w-full flex overflow-hidden bg-gray-100 p-6 sm:px-12 md:px-16">
-      {/* Large Screen Hero */}
-        <div className="hidden xl:flex w-full h-full">
-          {/* Background Circle */}
-          <div
-            className="absolute bg-violet-300/50 rounded-full shadow-lg z-0"
-            style={{
-              width: '51vw',
-              height: '51vw',
-              top: '-10vw',
-              right: '-15vw',
-            }}
-          ></div>
+      <section className="relative h-[95vh] w-full flex overflow-hidden bg-gray-100">
 
-          {/* Left Content */}
-          <div className="w-full xl:w-1/2 h-full flex flex-col justify-center items-center text-center px-6">
-            <h1 className="text-purple-700 text-4xl lg:text-6xl font-extrabold leading-tight">
-              Revolutionizing Fashion Forecasting
-            </h1>
-            <p className="text-lg lg:text-xl mt-4 text-gray-600 leading-relaxed">
-              A Data-Driven Approach for Empowering Creativity and Decision-Making in the Fashion Industry.
-            </p>
-            <Link
-              to="/product"
-              className="mt-6 px-8 py-3 bg-purple-700 text-white rounded-md hover:bg-purple-800 transition text-lg"
-            >
-              Learn More
-            </Link>
-          </div>
+      <div className="w-full h-full flex">
 
-          {/* Right Content */}
-          <div className="w-full xl:w-1/2 h-full flex justify-center items-center relative z-10">
-            <img
-              src={model}
-              alt="Model"
-              className="w-full max-w-[400px] h-auto object-contain"
-            />
-          </div>
-        </div>
-        {/* Small Screen Hero */}
-        <div className="xl:hidden text-white text-center py-16 px-6 min-h-[640px] flex flex-col justify-center bg-violet-100">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-violet-500">
+        <div
+          className="absolute bg-violet-300/50 rounded-full shadow-lg z-0 circle hidden lg:block"
+          style={{
+            width: '51vw',
+            height: '51vw',
+            top: '-10vw',
+            right: '-15vw',
+          }}
+        ></div>
+
+        <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center px-6 z-50">
+          <h1 className="text-purple-700 font-extrabold leading-tight heading">
             Revolutionizing Fashion Forecasting
           </h1>
-          <p className="text-lg md:text-xl text-black">
-            A Data-Driven Approach for Empowering Creativity and Decision-Making
-            in the Fashion Industry.
+          <p className="text-lg lg:text-xl mt-4 text-gray-600 leading-relaxed subHeading">
+            A Data-Driven Approach for Empowering Creativity and Decision-Making in the Fashion Industry.
           </p>
           <Link
             to="/product"
-            className="mt-8 px-6 py-3 bg-white text-violet-700 rounded-full text-lg mx-auto"
-            style={{ width: '200px' }}
+            className="mt-6 px-8 py-3 bg-purple-700 text-white rounded-md hover:bg-purple-800 transition text-lg"
           >
             Learn More
           </Link>
         </div>
-      </section>
 
+        <div className="w-full lg:w-1/2 h-full flex justify-center items-center relative z-10 modelImg">
+          <img
+            src={model}
+            alt="Model"
+            className="w-full max-w-[250px] max-h-[500px] h-auto object-contain"
+          />
+        </div>
+      </div>
+      </section>
 
       {/* Challenges Section */}
       <section className="max-w-7xl mx-auto py-16 px-6 text-center">
