@@ -20,9 +20,9 @@ export default function Contact() {
           </p>
         </header>
 
-        <section className="flex flex-col md:flex-row gap-8">
+        <section className="flex flex-col md:flex-row gap-8 text-center">
           <div className="md:basis-1/2 text-gray-800">
-            <h1 className="text-6xl font-bold">We can help!</h1>
+            <h1 className="text-5xl font-bold">We can help!</h1>
             <p className="text-xl mt-8">
               If you have a question or request, please contact us directly
               using one of the following or complete the form, and we will get
