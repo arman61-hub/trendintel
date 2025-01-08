@@ -64,6 +64,8 @@ export default function Header() {
                         isActive ? "text-violet-700" : "text-gray-700"
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-violet-700 lg:p-0`
                     }
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
                   >
                     {item.name}
                   </NavLink>
@@ -73,14 +75,18 @@ export default function Header() {
             <ul className="flex items-center lg:order-2 ml-3">
                 {/* Call-to-Action Buttons */}
                 <Link
-                to="/demo"
-                className="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                    to="/demo"
+                    className="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
                 >
                     Request a Demo
                 </Link>
                 <Link
-                to="/login"
-                className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                    to="/login"
+                    className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
                 >
                     Log in
                 </Link>
