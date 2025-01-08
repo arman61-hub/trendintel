@@ -11,8 +11,8 @@ export default function Product() {
       {/* Hero Section */}
       <div className="max-w-8xl mx-auto bg-white rounded-lg shadow-lg p-10 mb-10 md:pl-10">
         <div className="flex flex-col md:flex-row gap-10 items-center">
-          <div className="md:basis-1/2 text-center md:text-left mx-20">
-            <h1 className="text-4xl md:text-6xl font-bold text-neutral-950 mb-6">
+          <div className="md:basis-1/2 text-center md:text-left ">
+            <h1 className="text-3xl md:text-5xl font-bold text-neutral-950 mb-6">
               The closest thing to a crystal ball.
             </h1>
             <p className="text-lg md:text-xl text-neutral-700 mb-8">
