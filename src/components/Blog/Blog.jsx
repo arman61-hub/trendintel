@@ -8,7 +8,7 @@ import img6 from './img6.webp';
 
 export default function Blog() {
   return (
-    <div id="webcrumbs" className="bg-gray-50 p-8">
+    <div id="webcrumbs" className="bg-gray-50 p-4 pt-8">
       {/* Header Section */}
       <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-8">
         <div className="text-center">
